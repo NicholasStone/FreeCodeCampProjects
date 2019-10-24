@@ -1,0 +1,67 @@
+body{
+    font-family:'Microsoft Yahei', Arial, Helvetica, sans-serif;
+}
+
+.danmaku-screen{
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px #ccc solid;
+}
+
+.danmaku-screen .danmaku-mask{
+    width: 100%;
+    height: 50vh;
+}
+
+.danmaku-screen .danmaku-show dev {
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+
+.danmaku-launcher{
+    min-width: 100%;
+}
+
+.danmaku-launcher .danmaku-launcher-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.danmaku-input {
+    display: block;
+    width: 25rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    padding: .3rem;
+    border: 1px #ccc solid;
+    border-radius: 2px;
+}
+
+.danmaku-btn {
+    width: 10rem;
+    height: 2rem;
+    padding: .3rem;
+    background-color: transparent;
+    border: 1px #ccc solid;
+    border-radius: 2px;
+}
+
+.danmaku-btn-launch{
+    border-color: #28a745;
+    margin-right: 1rem;
+}
+
+.danmaku{
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    display: block;
+    animation: barrage 7s linear 0s;
+}

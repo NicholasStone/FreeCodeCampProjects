@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Danmaku</title>
+    <link rel="stylesheet" href="../public/reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <div class="danmaku-screen" class="danmaku-screen">
+            <div id="danmaku-mask" class="danmaku-mask"></div>
+            <div id="danmaku-show" class="danmaku-show"></div>
+        </div>
+        <div class="danmaku-launcher">
+            <form>
+                <div class="danmaku-launcher-row mt-10">
+                    <input type="text" class="danmaku-input" placeholder="发个弹幕吧" id="content">
+                </div>
+                <div class="danmaku-launcher-row mt-10">
+                    <button class="danmaku-btn danmaku-btn-launch mlr" id="launcher">发射</button>
+                    <button class="danmaku-btn danmaku-btn-clear mlr" id="clear">清除</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

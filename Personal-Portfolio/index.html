@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Profolio</title>
+    <link href="https://fonts.font.im/css?family=Lora|Raleway:100,300,500" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-transparent fixed-top" id="navbar">
+        <a class="navbar-brand" href="#" style="font-size: 300">Nichospace</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#profolio">Profolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <section class="row" id="about">
+            <div class="col-6 offset-6 d-flex justify-content-center align-items-center">
+                <blockquote id="typed" class="blockquote text-right">
+                    <p class="text-light display-2 font-lora">Carpe Diem.</p>
+                    <footer class="blockquote-footer display-4">Quintus Horatius Flaccus <cite>Odes</cite></footer>
+                </blockquote>
+            </div>
+        </section>
+        <section class="row mt-5" id="profolio">
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <h1 class="display-1 profolio-title">Profolio</h1>
+            </div>
+            <div class="col">
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img src="https://nichospace-box.oss-cn-shanghai.aliyuncs.com/images/mattias-diesel-WJCWbEwHGOM-unsplash.jpg" alt="Photo by Mattias Diesel on Unsplash" class="mr-3 col-3">
+                        <div class="media-body">
+                            <h5 class="mt-0">
+                                Project 1
+                            </h5>
+                            Photo by <a target="_blank" href="https://unsplash.com/@mattiasdiesel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mattias Diesel</a> on <a target="_blank" href="https://unsplash.com/t/arts-culture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <div class="media-body">
+                            <h5 class="mt-0">
+                                Project 2
+                            </h5>
+                            Photo by <a target="_blank" href="https://unsplash.com/@heysupersimi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Simone Hutsch</a> on <a target="_blank" href="https://unsplash.com/t/architecture?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                        <img src="https://nichospace-box.oss-cn-shanghai.aliyuncs.com/images/simone-hutsch-8p6pdSkA-6A-unsplash.jpg" alt="Photo by Simone Hutsch on Unsplash" class="mr-3 col-3">
+                    </li>
+                    <li class="media">
+                        <img src="https://nichospace-box.oss-cn-shanghai.aliyuncs.com/images/ananya-bilimale-k05D8dlaZQg-unsplash.jpg" alt="Photo by Ananya Bilimale on Unsplash" class="mr-3 col-3">
+                        <div class="media-body">
+                            <h5 class="mt-0">
+                                Qomolangma
+                            </h5>
+                            Photo by <a target="_blank" href="https://unsplash.com/@highwaypatrol_x?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ananya Bilimale</a> on <a target="_blank" href="https://unsplash.com/s/photos/everest?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="row mt-5" id="contact">
+            <div class="col-8 offset-2">
+                <h2 class="contact-title">
+                    Contact With Me
+                </h2>
+                <hr>
+                <div class="row">
+                    <form action="#" class="col-7">
+                        <div class="form-group">
+                            <label for="name" class="sr-only">
+                                Name
+                            </label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name-help" placeholder="Name:">
+                            <small id="name-help">Pleace type your name above.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="e-mail" class="sr-only">
+                                E-mail
+                            </label>
+                            <input type="email" class="form-control" id="email" aria-describedby="email-help" placeholder="Email:">
+                            <small id="email-help">Pleace input your email above.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel" class="sr-only">
+                                Phone Number:
+                            </label>
+                            <input type="text" class="form-control" id="tel" aria-describedby="name-help" placeholder="Phone Number">
+                            <small id="name-help">Pleace type your phone number above</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Leave me a message" aria-describedby="message-help"></textarea>
+                            <small id="message-help">Place leave me message above</small>
+                        </div>
+                    </form>
+                    <div class="col">
+                            Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.
+                            <br>
+                            I promise to reply A.S.A.P.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer pt-4 row d-flex justify-content-around" id="footer">
+            <div>
+                <h3>About this page</h3>
+                <hr>
+                <p>A FreeCodeCamp Project</p>
+                <p>Made by Nicholas</p>
+                <p>Inspired by FreeCodeCamp Example</p>
+            </div>
+            <div>
+                <h3>Share to:</h3>
+                <hr>
+                <p class="display-4">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-slack"></i>
+                    <i class="fab fa-reddit"></i>
+                </p>
+            </div>
+            <div class="w-100"></div>
+            <p class="mt-3 mb-2">Allright Reserved</p>
+        </footer>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

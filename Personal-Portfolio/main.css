@@ -1,0 +1,37 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background:#fff;
+}
+
+#about {
+    height: 100vh;
+    background-image: url(https://images.wallpaperscraft.com/image/flower_petals_macro_148416_1920x1080.jpg);
+    background-size: cover;
+}
+
+.font-lora {
+    font-family: Lora;
+}
+
+#protfolio {
+    height: 100vh;
+}
+
+#profolio .profolio-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12rem;
+    font-weight: 100;
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+}
+
+#footer{
+    background-color: #cccccc;
+}
