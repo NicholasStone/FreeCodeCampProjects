@@ -1,0 +1,31 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #0a65bc;
+}
+
+.container{
+    background-color: #11111170;
+    position: relative;
+    left: 3%;
+    top: 5%;
+    width: 94%;
+    height: 90%;
+}
+
+.background{
+
+}
+
+.temperature{
+    color: #fff;
+    font-size: 120px;
+    text-align: center;
+    line-height: 240px;
+    height: 240px;
+}
+
+.temperature::after{
+    content: attr(data-scale);
+    font-size: 60px;
+}
