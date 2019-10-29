@@ -1,20 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
 html, body{
     width: 100%;
     height: 100%;
-    background-color: #0a65bc;
 }
 
 .container{
-    background-color: #11111170;
-    position: relative;
-    left: 3%;
-    top: 5%;
-    width: 94%;
-    height: 90%;
-}
-
-.background{
-
+    background-color: #000;
+    border: 50px #1234cf solid;
+    width: 100%;
+    height: 100%;
 }
 
 .temperature{
@@ -28,4 +25,14 @@ html, body{
 .temperature::after{
     content: attr(data-scale);
     font-size: 60px;
+}
+
+.info{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.indices{
+    color: white;
 }
