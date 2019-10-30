@@ -1,28 +1,34 @@
 const weather_api_uri = 'http://apis.juhe.cn/simpleWeather/query';
-const ip_api_uri = 'http://ipinfo.io';
+const ip_api_uri = 'http://ip.taobao.com/service/getIpInfo.php?ip=myip';
 
 /**
  * request though ajax
  * @param params url, method, payloads, success callback, error callback
  */
-function ajaxGet(params = {url: '', parameter: {}, success: ()=>{}, error: () => {}}) {
+function ajaxGet({uri = '', parameter = {}, success, error}) {
     // serialize parameters
-    if (Object.getOwnPropertyNames(params.parameter).length !== 0){
-        
+    let queries = [];
+    if (Object.getOwnPropertyNames(parameter).length !== 0){
+        for (let [key, val] of Object.entries(parameter)){
+            queries.push(`${key}=${val}`);
+        }
     }
+    let url = uri + (queries.length === 0 ? "" : "?" + queries.join("&"));
 
     let request = new XMLHttpRequest();
-    request.open("get", params.url, true);
+
+    request.open("get", url, true);
 
     request.onload = function () {
-        if (status >= 200 && status < 400){
-            // succeed
-            params.success(JSON.parse(this.response));
+        if (this.status >= 200 && this.status < 400){
+            success(this.response);
+        }else{
+            console.log("server reached yet error was returned ", this.status, this.response);
         }
     };
 
     request.onerror = function (e) {
-        params.error(e)
+        error(e)
     };
 
     request.send();
@@ -30,9 +36,13 @@ function ajaxGet(params = {url: '', parameter: {}, success: ()=>{}, error: () =>
 
 function getIp() {
     ajaxGet({
-        url: ip_api_uri,
-        parameter: {
-
-        }
-    })
+        uri: ip_api_uri,
+        success: function (response) {
+            response.city
+        },
+        error: function (err) {
+            console.log(err);
+        }});
 }
+
+getIp();
